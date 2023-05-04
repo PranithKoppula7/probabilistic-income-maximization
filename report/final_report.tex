@@ -194,7 +194,11 @@ Then we want to wrap up our findings and write a final report. We are hoping tha
 
 To conclude, our primary task was to explore what factors improve and maximize the probability for an individual to increase their income. As a recap, we focused on the UCI Census Data and explored a Gaussian Naive Bayes, K Neighbors, Logistic Regression, and Random Forest Classifer. 
 
-Our final
+We tried performing principle component analysis with our K-nearest-neighbors classifier but received results slightly less accurate than the classifier without PCA. Upon examining which features are the important to an inviduals income, we conclude that education is the most influential that was provided in the dataset.
+
+Although our random-forest classifier led us to believe that features like age, marital status, and occupation held the most weight, our logistic regression classifier revealed a high correlation between education and income. It is important to supplement our models results with literature and research outisde of our own calculations before making a conclusion.
+
+
 
 \bibliographystyle{plain}
 \bibliography{ref}
