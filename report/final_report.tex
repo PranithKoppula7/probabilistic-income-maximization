@@ -192,11 +192,16 @@ Then we want to wrap up our findings and write a final report. We are hoping tha
 
 \section{Conclusion}
 
-To conclude, our primary task was to explore what factors improve and maximize the probability for an individual to increase their income. As a recap, we focused on the UCI Census Data and explored a Gaussian Naive Bayes, K Neighbors, Logistic Regression, and Random Forest Classifer. 
+Our primary task was to explore what factors improve and maximize the probability for an individual to increase their income. As a recap, we focused on the UCI Census Data and explored a Gaussian Naive Bayes, K Neighbors, Logistic Regression, and Random Forest Classifer. We tried performing principle component analysis with our K-nearest-neighbors classifier but received results slightly less accurate than the classifier without PCA. 
 
-We tried performing principle component analysis with our K-nearest-neighbors classifier but received results slightly less accurate than the classifier without PCA. Upon examining which features are the important to an inviduals income, we conclude that education is the most influential that was provided in the dataset.
+Furthermore, we performed 10-fold cross validation on K-Neighbors and Random Forest to improve our models' accuracy and prevent overfitting. We found the most optimal number of neighbors for K-neighbors to be 22, but we were unable to determine the optimal number of estimators for Random Forest due to limited computing power. Nevertheless, we still obtained a high accuracy. 
 
-Although our random-forest classifier led us to believe that features like age, marital status, and occupation held the most weight, our logistic regression classifier revealed a high correlation between education and income. It is important to supplement our models results with literature and research outisde of our own calculations before making a conclusion.
+Upon examining which features are the important to an inviduals income, we conclude that education is the most influential feature that was provided in the dataset. Our random-forest classifier led us to believe that features like age, marital status, and occupation held the more weight but our logistic regression classifier revealed a high correlation between education and income.
+
+Through pertubation, we found that incrementing education levels, resulted in a higher rate of salary conversions from <=50K to >50K than any other feature, including those like age (taking into account the significance of one year of education compared to other features). With that being said, it is also important to supplement our models results with literature and research outside of our own calculations before making a true conclusion. 
+
+Our analysis has shown that education is the most important factor, but even outside of the mathematical and statistical world, the importance of education cannot be overstated. Education can shape a person's career and earning potential. We hope our work can contribute to a better understanding of what factors influence income and we believe that our findings show the need for more investment in education for all people. 
+
 
 
 
